@@ -1,6 +1,7 @@
 Tugas Kecil 1 IF 2211 Strategi Algortima
 
 A). Deskripsi Singkat
+
 Program merupakan solver untuk minigame Hacking di game Cyberpunk 2077 yang menggunakan algoritma brute force.
 
 B). Requirement
