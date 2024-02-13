@@ -1,4 +1,4 @@
-from src.util import *
+from util import *
 import time
 
 def get_cords_token(matrix,Initial_point,movement_sequence):
@@ -40,8 +40,8 @@ def next_move_seq(mov_seq,row,col,id):
     else:
         max = row-1
     
-    if mov_seq[id] == max and id != 0:
-        next_move_seq(mov_seq,row,col,id-1)
+    if mov_seq[id] == max and id != len(mov_seq)-1:
+        next_move_seq(mov_seq,row,col,id+1)
         mov_seq[id] = 1
     else:
         mov_seq[id] +=1
@@ -70,12 +70,14 @@ def print_cords(cords,col):
         print(str(a+1)+",",b+1)
 
 def output(value,buffer,cords,col):
+    print("")
+    print("Solusi : ")
     print(value)
     if value > 0:
         print(buffer)
         print_cords(cords,col)
 
-def save(file,value,buffer,cords,col):
+def save(value,buffer,cords,col,time):
     print("")
     print("")
     Simpan = input("Apakah ingin menyimpan solusi?(y/n)")
@@ -83,11 +85,12 @@ def save(file,value,buffer,cords,col):
         print("maaf tolong jawab dengan y atau n")
         Simpan = input("Apakah ingin menyimpan solusi?(y/n)")
     if Simpan == "y":
+        file = input("Nama file: ")
         clear_file(file)
         f = open(file,"a")
         f.write(str(value)+"\n")
         f.write(str(buffer)+"\n")
         for i in range (len(cords)):
             x,y = dig_to_idx(cords[i],col)
-            f.write(str(x)+",",str(y)+"\n")
-        
+            f.write(str(x+1)+", "+str(y+1)+"\n")
+        f.write(str(time)+" ms")
