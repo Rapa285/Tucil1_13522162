@@ -8,11 +8,11 @@ B). Requirement
   - Numpy (versi yang digunakan : 12.6.1)
 
 C). Cara Menggunakan
-  - Input
-      Pengguna perlu menginput data sebagai berikut : Matrix,Ukuran Buffer,Sekuens,Reward untuk Sekuens.
-      Ada 2 cara menginput, pertama melalui file txt dengan format dibawah ini, yang kedua adalah dengan randomize. 
-      Untuk menggunakan fitur randomize pengguna perlu menginput token yang diinginkan untuk muncul pada matrix dan sekuens,
-      banyak baris dan kolom dari matriks, ukuran buffer, dan ukuran maksimum sekuens
+  1). Input
+      -  Pengguna perlu menginput data sebagai berikut : Matrix,Ukuran Buffer,Sekuens,Reward untuk Sekuens.
+      -  Ada 2 cara menginput, pertama melalui file txt dengan format dibawah ini, yang kedua adalah dengan randomize. 
+      -  Untuk menggunakan fitur randomize pengguna perlu menginput token yang diinginkan untuk muncul pada matrix dan sekuens,
+      -  banyak baris dan kolom dari matriks, ukuran buffer, dan ukuran maksimum sekuens
 
       contoh format file
       7 # ukuran buffer
@@ -31,8 +31,8 @@ C). Cara Menggunakan
       BD 1C BD 55
       30
       
-  - Output
-      setelah selesai menginput dan klik enter, solusi akan keluar dengan format dibawah ini
+  2). Output
+      -  setelah selesai menginput dan klik enter, solusi akan keluar dengan format dibawah ini
 
       50 # Reward maximum
       7A BD 7A BD 1C BD 55 # isi buffer
@@ -47,7 +47,7 @@ C). Cara Menggunakan
       Apakah ingin menyimpan solusi? (y/n) # opsi untuk menympan solusi
 
   3). Save
-      setelah keluar solusi, pengguna memiliki opsi untuk menyimpan solusi kedalan file, format solusi yang di simpan menyerupai Output
+      -  setelah keluar solusi, pengguna memiliki opsi untuk menyimpan solusi kedalan file, format solusi yang di simpan menyerupai Output
 
 D). Identitas Pembuat Program
    -  Nama : Pradipta Rafa Mahesa
