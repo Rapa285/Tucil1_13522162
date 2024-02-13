@@ -8,7 +8,7 @@ B). Requirement
   - Numpy (versi yang digunakan : 12.6.1)
 
 C). Cara Menggunakan
-  1). Input
+  - Input
       Pengguna perlu menginput data sebagai berikut : Matrix,Ukuran Buffer,Sekuens,Reward untuk Sekuens.
       Ada 2 cara menginput, pertama melalui file txt dengan format dibawah ini, yang kedua adalah dengan randomize. 
       Untuk menggunakan fitur randomize pengguna perlu menginput token yang diinginkan untuk muncul pada matrix dan sekuens,
@@ -31,7 +31,7 @@ C). Cara Menggunakan
       BD 1C BD 55
       30
       
-  2). Output
+  - Output
       setelah selesai menginput dan klik enter, solusi akan keluar dengan format dibawah ini
 
       50 # Reward maximum
@@ -50,7 +50,7 @@ C). Cara Menggunakan
       setelah keluar solusi, pengguna memiliki opsi untuk menyimpan solusi kedalan file, format solusi yang di simpan menyerupai Output
 
 D). Identitas Pembuat Program
-   Nama : Pradipta Rafa Mahesa
-   NIM : 13522162
-   Kelas : K3
+   -  Nama : Pradipta Rafa Mahesa
+   -  NIM : 13522162
+   -  Kelas : K3
 
