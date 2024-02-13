@@ -1,5 +1,5 @@
 from util import *
-import time
+
 
 def get_cords_token(matrix,Initial_point,movement_sequence):
     current_row = 0
@@ -16,15 +16,6 @@ def get_cords_token(matrix,Initial_point,movement_sequence):
         cord = idx_to_digit(len(matrix[0]),current_row,current_col)
         cords.append(cord)
     return cords,token
-
-def get_token_value(token,seq,seq_reward):
-    value = 0
-    for i in range (len(seq)):
-        print(seq[i])
-        print(seq_reward[i])
-        if(isSubset(seq[i],token)):
-            value += seq_reward[i]
-    print(value)
     
 
 def get_max_reward(seq_reward):

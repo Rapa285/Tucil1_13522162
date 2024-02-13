@@ -1,6 +1,7 @@
 from function import *
 from baca_input import *
 from matrix_generator import*
+import time
 
 print("Cyberpunk 2077 Breach Protocol Solver")
 print("Pilih cara menginput")

@@ -8,18 +8,11 @@ def isSubset(seq,array): # mencari apakah seq adalah subset dari array
         if (seq[k] == array[i] and found == False):
             k+=1
             i+=1
-            #print("flag if")
         else:
             i+=1
             k = 0
-            #print("flag else",end=" ")
-            #print(i)
         if (k == len(seq)):
             found = True
-            #print("flag found")
-    #print("hasil:")
-    #print(found)
-    #print("")
     return found
 
 def isOdd(x):
