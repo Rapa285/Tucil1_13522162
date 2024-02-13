@@ -16,7 +16,9 @@ while cara_input != 1 and cara_input != 2:
 
 if cara_input == 1:
     file = input("Nama file input : ")
-    buffer_size,matrix,row,col,seq,seq_reward = baca_file(file)
+    if check_file_validity(file):
+        buffer_size,matrix,row,col,seq,seq_reward = baca_file(file)
+        
 else:
     buffer_size,matrix,row,col,seq,seq_reward = generate()
 

@@ -23,8 +23,9 @@ def generate_seq(token,N,max):
     seq = []
     for i in range(N):
         r = random.randint(2,max)
-        #print(r)
         sq = random.choices(token,k=r)
+        while isInSeq(sq,seq):
+            sq = random.choices(token,k=r)
         seq.append(sq)
     return seq
 
@@ -32,6 +33,8 @@ def generate_seq_reward(N):
     seq_reward = []
     for i in range (N):
         reward = random.randrange(-50,50,5)
+        while isInSeq(reward,seq_reward):
+            reward = random.randrange(-50,50,5)
         seq_reward.append(reward)
     return seq_reward
 
@@ -124,3 +127,9 @@ def isNum(x):
             test = True
     return test
 
+def isInSeq(seq,seq_array):
+    test = False
+    for i in range(len(seq_array)):
+        if seq_array[i] == seq:
+            test = True
+    return test
